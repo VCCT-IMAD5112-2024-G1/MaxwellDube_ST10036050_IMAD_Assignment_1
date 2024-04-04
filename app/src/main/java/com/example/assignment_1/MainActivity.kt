@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Declaring variables for all the textviews and buttons by the use of their id
         val clearBtn = findViewById<Button>(R.id.clearBtn)
         val generateBtn = findViewById<Button>(R.id.generateBtn)
         var viewAge = findViewById<TextView>(R.id.viewAge)
@@ -21,7 +22,8 @@ class MainActivity : AppCompatActivity() {
 
 
         generateBtn.setOnClickListener {
-
+            //This if statement checks if the search area is blank and if the number entered is not an integer
+            //if so then an error messege is displayed as toast
             if (viewAge.text.toString().toIntOrNull() != null ) {
                 var intViewAge = viewAge.text.toString().toInt()
 
@@ -35,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                             "She was a member of the R&B woman group TLC,"
 
                 } else if (intViewAge >= 40 && intViewAge <= 49) {
+                    //The difference between the age entered and John F. Kennedy's age is calculated and displayed
                     var ans = 0
                     if (intViewAge < 46){
                         ans = (46 - intViewAge)
@@ -66,6 +69,7 @@ class MainActivity : AppCompatActivity() {
                     message.text = "You age is between 90-100, did you know that One of the most influential artists of the 20th century, " +
                             "he is known for co-founding the invention of constructed sculpture, " +
                             "the co-invention of collage. Picasso  was a Spanish painter, sculptor, printmaker passed away at age 91."
+                //An error message is displayed if the integer entered is out of range (20-100)
                 } else {
                     Toast.makeText(this@MainActivity, "The age is out of range", Toast.LENGTH_LONG)
                         .show()
@@ -78,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-
+        //Once the clear button is clicked every thing is cleared and the app is reset back to start
         clearBtn.setOnClickListener {
             viewAge.text = ""
             message.text = ""
