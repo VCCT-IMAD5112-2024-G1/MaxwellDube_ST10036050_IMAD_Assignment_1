@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/courgette"
             android:text=" The History App"
-            android:textColor="#F3EFEF"
+            android:textColor="#535352"
             android:textSize="35sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

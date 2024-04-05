@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Declaring variables for all the textviews and buttons by the use of their id
+        //Declaring variables for all the text-views and buttons by the use of their id
         val clearBtn = findViewById<Button>(R.id.clearBtn)
         val generateBtn = findViewById<Button>(R.id.generateBtn)
         var viewAge = findViewById<TextView>(R.id.viewAge)
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         generateBtn.setOnClickListener {
             //This if statement checks if the search area is blank and if the number entered is not an integer
-            //if so then an error messege is displayed as toast
+            //if so then an error message is displayed as toast
             if (viewAge.text.toString().toIntOrNull() != null ) {
                 var intViewAge = viewAge.text.toString().toInt()
 
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                     if (intViewAge > 46) {
                         ans = (intViewAge - 46)
                     }
-                    message.text = " $ans year age differnce from John F. Kennedy who was the 35th President of the United States (1961-1963)," +
+                    message.text = " $ans year age difference from John F. Kennedy who was the 35th President of the United States (1961-1963)," +
                                 " the youngest man elected to the office. Kennedy died at 46."
 
                 } else if (intViewAge >= 50 && intViewAge <= 59) {
