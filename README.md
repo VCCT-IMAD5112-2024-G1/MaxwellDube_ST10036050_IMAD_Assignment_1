@@ -7,6 +7,7 @@ HOW TO USE THE HISTORY APP
 5. After you enter the age press on the "Generate" button and a message will be displayed in the display screen
 6. Use the "Clear" button clear everything/reset the app
 7. Enjoy!
+
 [The History app Report_ST10036050.docx](https://github.com/VCCT-IMAD5112-2024-G1/MaxwellDube_ST10036050_IMAD_Assignment_1/files/14890052/The.History.app.Report_ST10036050.docx)
 
 My youtube video link: https://youtu.be/oa5SONu0ls0
